@@ -1,0 +1,36 @@
+package test.repository;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import test.model.Products;
+
+\
+
+public class ProductsRepository {
+	
+	private static final String TAG = "Products : ";
+	private static ProductsRepository instance = new ProductsRepository();
+	private ProductsRepository() {}
+	public static ProductsRepository getInstance() {
+		return instance;
+	}
+	
+	private Connection conn = null;
+	private PreparedStatement pstmt = null;
+	private ResultSet rs = null;
+	
+	public List<Products> findAll() {
+		final String SQL = "";
+		List<Products> products = new ArrayList<>();
+		
+		try {
+			conn = DBConn
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}
