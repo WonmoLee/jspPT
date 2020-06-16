@@ -155,6 +155,8 @@
 
       <Context docBase="C:\src\jspPT\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\src\jspPT\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\practice" path="/practice" reloadable="true" source="org.eclipse.jst.jee.server:practice">
 <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="bitc5600" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="practice"/>0
+</Context><Context docBase="C:\src\jspPT\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\practice2" path="/practice2" reloadable="true" source="org.eclipse.jst.jee.server:practice2">
+<Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="bitc5600" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="practice"/>0
 </Context></Host>
     </Engine>
   </Service>
