@@ -29,6 +29,7 @@ public class ProductsMainPriceAction implements Action{
 		response.setContentType("application/json; charset=UTF-8");
 		PrintWriter pw = response.getWriter();
 		
-		pw.println(productsJson);
+		pw.print(productsJson);
+//		System.out.println(productsJson);
 	}
 }

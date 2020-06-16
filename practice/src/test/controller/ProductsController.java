@@ -10,7 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 import test.action.Action;
 import test.action.ProductsMainAction;
 import test.action.ProductsMainCountAciton;
+import test.action.ProductsMainDelete;
 import test.action.ProductsMainPriceAction;
+import test.action.ProductsReMain;
 
 
 @WebServlet("/products")
@@ -44,6 +46,10 @@ public class ProductsController extends HttpServlet {
 			return new ProductsMainPriceAction();
 		} else if(cmd.equals("mainCount")) {
 			return new ProductsMainCountAciton();
+		} else if(cmd.equals("mainDeleteProc")) {
+			return new ProductsMainDelete();
+		} else if(cmd.equals("remain")) {
+			return new ProductsReMain();
 		}
 		return null;
 	}

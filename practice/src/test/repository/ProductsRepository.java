@@ -107,4 +107,24 @@ public class ProductsRepository {
 		}
 		return null;
 	}
+	
+	public int findDeleteById(int id) {
+		final String SQL = "DELETE FROM PRODUCTS WHERE ID = ?";
+		List<Products> products = new ArrayList<>();
+		
+		try {
+			conn = DBConn.getConnection();
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setInt(1, id);
+			int result = pstmt.executeUpdate();
+			
+			return result;
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(TAG + "findDeleteById : " + e.getMessage());
+		} finally {
+			DBConn.close(conn, pstmt);
+		}
+		return -1;
+	}
 }
